@@ -26,7 +26,8 @@ function App() {
 
   return (
     <div className='App'>
-      <div class='container mx-auto px-4 py-8 sm:px-8 max-w-screen-lg'>
+      <div class='container mx-auto px-4 py-8 sm:px-8 max-w-screen-lg content-wrapper'>
+        <h1 className='font-extrabold text-3xl mt-5'>Sorting the Movie List</h1>
         <div className='flex justify-center mt-5'>
           <button
             onClick={() => toggleMoviesHandler()}
@@ -44,7 +45,7 @@ function App() {
             )}
           </button>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3  gap-6 mt-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3  gap-6 mt-5 md:mt-8'>
           {sortMovies?.map((movie) => (
             <Movies
               key={movie.id}

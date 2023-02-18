@@ -8,7 +8,7 @@
 }
 
 /* grid */
-.grid > *:first-child {
+.content-wrapper > *:first-child {
   margin-top: 0;
 }
 
